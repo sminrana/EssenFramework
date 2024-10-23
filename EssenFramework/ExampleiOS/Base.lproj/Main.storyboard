@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VrS-xe-5Ee">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="pKF-Lp-4Bt">
+            <objects>
+                <viewController id="VrS-xe-5Ee" customClass="ViewController" customModule="ExampleiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OJG-8Y-QoM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="euz-rz-0cx">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GlS-If-I8m">
+                                        <rect key="frame" x="15" y="0.0" width="414" height="814"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNL-22-kzX">
+                                                <rect key="frame" x="81" y="17" width="230" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Open Calendar"/>
+                                                <connections>
+                                                    <action selector="openCalendarAction" destination="VrS-xe-5Ee" eventType="touchUpInside" id="v7O-dI-CVi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xe5-5K-ijj">
+                                                <rect key="frame" x="81" y="69" width="230" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Open Google"/>
+                                                <connections>
+                                                    <action selector="openGoogle" destination="VrS-xe-5Ee" eventType="touchUpInside" id="MWW-PF-u7a"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="GlS-If-I8m" firstAttribute="bottom" secondItem="1uL-OG-Obm" secondAttribute="bottom" constant="778" id="AtF-oR-dYS"/>
+                                    <constraint firstItem="GlS-If-I8m" firstAttribute="top" secondItem="1uL-OG-Obm" secondAttribute="top" id="BQx-Fb-7jR"/>
+                                    <constraint firstItem="GlS-If-I8m" firstAttribute="width" secondItem="37D-zp-OAq" secondAttribute="width" id="L3F-Fg-iv6"/>
+                                    <constraint firstItem="GlS-If-I8m" firstAttribute="leading" secondItem="1uL-OG-Obm" secondAttribute="leading" constant="15" id="aoZ-1U-d70"/>
+                                    <constraint firstItem="GlS-If-I8m" firstAttribute="trailing" secondItem="1uL-OG-Obm" secondAttribute="trailing" constant="358" id="pjy-hE-wpJ"/>
+                                    <constraint firstItem="GlS-If-I8m" firstAttribute="height" secondItem="37D-zp-OAq" secondAttribute="height" priority="250" id="szH-Si-yM1"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="1uL-OG-Obm"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="37D-zp-OAq"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kU1-1v-YFa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="euz-rz-0cx" firstAttribute="leading" secondItem="kU1-1v-YFa" secondAttribute="leading" id="TBm-hH-Qgd"/>
+                            <constraint firstItem="euz-rz-0cx" firstAttribute="bottom" secondItem="kU1-1v-YFa" secondAttribute="bottom" id="THs-zk-n4F"/>
+                            <constraint firstItem="kU1-1v-YFa" firstAttribute="trailing" secondItem="euz-rz-0cx" secondAttribute="trailing" id="h7b-KR-dvp"/>
+                            <constraint firstItem="euz-rz-0cx" firstAttribute="top" secondItem="kU1-1v-YFa" secondAttribute="top" id="oFc-UF-ZjB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MsQ-pa-NZp" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.13043478260872" y="4.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
